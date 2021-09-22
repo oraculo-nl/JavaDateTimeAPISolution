@@ -7,7 +7,8 @@ import java.util.Locale;
 
 public class Exercise5 {
     public static void main(String[] args) {
-        //Print your birthday in the following format:
+        //Print an arbitrary day in the following format in your own locale, e,g, Dutch
+        //Add a period of 2 years, 3 months, 3 weeks and 2 days to this date and print the result in the same format
         var birthday = LocalDate.of(2001, 3, 8);
         var dtf = DateTimeFormatter.ofPattern("EEEE d MMMM yyyy", Locale.forLanguageTag("nl"));
         System.out.println(birthday.format(dtf));

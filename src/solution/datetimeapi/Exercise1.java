@@ -13,6 +13,7 @@ public class Exercise1 {
         var randomDate = LocalDate.ofInstant(instant, ZoneId.systemDefault());
         System.out.println(randomDate);
         //Given the random date, find the date of the previous Thursday
+        //Hint: use TemporalAdjusters
         System.out.printf("The previous Thursday is: %s%n",
                 randomDate.with(TemporalAdjusters.previous(DayOfWeek.THURSDAY)));
     }
